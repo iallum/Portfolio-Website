@@ -217,14 +217,25 @@ a[href^="mailto:"] {
   color: #2d56a6;  /* your desired color */
   text-decoration: none; /* optional: remove underline */
 }
-.social-icon {
-  width: 55px;          /* size of the icons */
+.social-icons {
+  /* Use flexbox to manage layout and spacing */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px; /* A clean way to add space between elements */
+}
+.social-icons a {
+  /* Give the anchor a fixed size to match the image */
+  width: 55px;
   height: 55px;
+  border-radius: 50%;
+}
+.social-icon {
+  /* Make the image fill the anchor's container */
+  width: 100%;
+  height: 100%;
+  display: block; /* Removes extra space around the image */
   object-fit: contain;
-  display: inline-block;
-  margin: 0 10px;       /* space between icons */
-  vertical-align: middle;
-  cursor: pointer;
 }
 
 .modal-backdrop {
