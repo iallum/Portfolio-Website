@@ -1,0 +1,70 @@
+#
+# Work based on https://github.com/mmistakes/minimal-mistakes/blob/master/_data/ui-text.yml
+#
+# Configuration: Add to _config.yml
+# locale: "en-US"  [YOUR PREFERRED LOCALE]
+#
+# How to use:
+# {{ site.data.ui-text[site.locale].<var_name> | default: 'text' }}
+
+# English (default)
+# -----------------
+en: &DEFAULT_EN
+  header:
+    title: "Izzy Allum's Portfolio"
+    text: "Welcome to my creative space"
+    button: "View My Work"
+    buttonlink: "#portfolio"
+    # Custom layout - set to true to use custom header layout
+    custom_layout: true
+    # Path to your profile image (place in assets/img/)
+    profile_image: "assets/img/profile.jpg"
+    # Your introduction paragraph
+    intro_text: "Hello, my name is Isabel (Izzy) Allum. Welcome to my portfolio! Please take a look at some of my projects below.\n I’m currently a student at Columbia University pursuing an MS in Computer Science (Machine Learning track), and I previously graduated from the University of Chicago with a BA in Economics with a specialization in Data Science.\n Between my bachelor’s and master’s programs, I worked at an economic consulting firm for two years. During this time, I realized the projects I enjoyed most, both at work and in school, were those were I was able to utilize programming and data, particularly those where I was able to extract a telling pattern or trend from the noise of a large dataset.\n I’m excited to be diving deeper into topics like machine learning, artificial intelligence, and advanced statistical methods as I work towards a career where I’ll be able to leverage my both my technical and economics background!"
+
+  # Projects section (renamed from services)
+  projects_intro:
+    title: "Check out some of my projects"
+    text: "Here's a selection of work I'm proud of"
+    section: projects
+
+  portfolio:
+    title: "My Portfolio"
+    section: portfolio
+    closebutton: "Close Project"
+    projects:
+      - title: "Grocery Merger Price Analysis"
+        image: "assets/img/portfolio/grocery.jpg"
+        description: "Big Data Analysis on Databricks"
+      - title: "Consulting for Perpetual"
+        image: "assets/img/portfolio/perpetual.jpg"
+        description: "API Usage and Location Clustering"
+    # You'll add your actual projects here - example structure:
+    # projects:
+    #   - title: "Project Name"
+    #     image: "assets/img/portfolio/project1.jpg"
+    #     description: "Brief project description"
+    #     url: "#" # link to project page or external site
+
+  about:
+    title: "About Me"
+    text: "My story and background"
+    body: "This is where you can write more about yourself, your background, education, experience, and what drives you. You can talk about your journey, your skills, and what makes you passionate about your work. **Markdown** formatting is supported here, so you can make text **bold** or *italic* as needed."
+    section: about
+
+  footer:
+    social:
+      - url: https://www.linkedin.com/in/isabel-allum-1335b117a/
+        icon: "fab fa-linkedin-in"
+      - url: https://github.com/iallum
+        icon: "fab fa-github"
+      # Add or remove social links as needed
+
+en-US:
+  <<: *DEFAULT_EN
+en-CA:
+  <<: *DEFAULT_EN
+en-GB:
+  <<: *DEFAULT_EN
+en-AU:
+  <<: *DEFAULT_EN

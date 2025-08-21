@@ -1,0 +1,24 @@
+- id: grocery
+  title: Grocery Merger
+  short: Cloud-Based Big Data Analysis
+  image: /assets/img/grocery.jpg
+
+- id: perpetual
+  title: Perpetual
+  short: Data Science Consulting
+  image: /assets/img/perpetual.jpg
+
+- id: spotify
+  title: Music Analysis
+  short: Hit Prediction & Song Rec Algorithm
+  image: /assets/img/spotify.jpg
+
+- id: game
+  title: Modified Connect 4
+  short: Programming in C
+  image: /assets/img/game.jpg
+
+- id: research
+  title: Economic Research
+  short: Data Modeling
+  image: /assets/img/research.jpg

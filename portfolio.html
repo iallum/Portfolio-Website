@@ -1,0 +1,19 @@
+---
+layout: default
+title: Portfolio
+---
+
+<h2>My Projects</h2>
+
+<div class="portfolio-grid">
+  {% for project in site.data.projects %}
+  <div class="project-card" onclick="openModal('{{ project.id }}')">
+    <div class="project-card-image-wrapper">
+      <img src="{{ project.image | relative_url }}" alt="{{ project.title }}" onerror="this.onerror=null;this.src='https://placehold.co/300x225/e8f2fc/001745?text=Image+Not+Found';">
+      <div class="overlay"><span>+</span></div>
+    </div>
+    <h3>{{ project.title }}</h3>
+    <p>{{ project.short }}</p>
+  </div>
+  {% endfor %}
+</div>

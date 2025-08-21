@@ -1,0 +1,33 @@
+---
+layout: default
+title: About
+---
+
+<h2>More About Me</h2>
+
+<h3>Academics</h3>
+<div class="education-list">
+  {% for education_item in site.data.schools.education %}
+  <div class="education-entry">
+    <div class="education-header">
+      <h4>{{ education_item.school }}</h4>
+      <span class="education-years">{{ education_item.years }}</span>
+    </div>
+    <div class="degree-info">
+      <p class="education-degree">{{ education_item.degree }}</p>
+      {% if education_item.notes %}
+        <p class="education-notes">{{ education_item.notes }}</p>
+      {% endif %}
+    </div>
+    <p>Relevant Courses: {{ education_item.courses | join: ' • ' }}</p>
+    {% if education_item.extracurriculars %}
+      <p>Extracurriculars: {{ education_item.extracurriculars | join: ' • ' }}</p>
+    {% endif %}
+  </div>
+  {% endfor %}
+</div>
+
+<h3>Resume</h3>
+<div class="resume-container">
+  <iframe src="{{ 'assets/resume.pdf' | relative_url }}" width="100%" height="650px"></iframe>
+</div>

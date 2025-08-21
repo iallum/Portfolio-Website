@@ -1,0 +1,49 @@
+---
+layout: default
+title: Home
+---
+
+<section class="intro-stripe">
+  <div class="intro-container">
+    <h1 class="page-heading">ISABEL ALLUM</h1>
+    <div class="intro-wrapper">
+      <img class="profile-pic" src="assets/img/profile.jpg" alt="Isabel Allum">
+      <div class="intro-text">
+        <p>Hello, and welcome to my portfolio!</p>
+        <p>My name is Isabel (Izzy) Allum, and I’m currently a student at Columbia University pursuing an MS in Computer Science (Machine Learning track). I previously graduated from the University of Chicago with a BA in Economics with a specialization in Data Science.</p>
+        <p>Between my bachelor’s and master’s programs, I worked at an economic consulting firm for two years. During this time, I realized the projects I enjoyed most, both at work and in school, were those were I was able to utilize programming and data, particularly those where I was able to extract a telling pattern or trend from the noise of a large dataset.</p>
+        <p>I’m excited to be diving deeper into topics like machine learning, artificial intelligence, and advanced statistical methods as I work towards a career where I’ll be able to leverage my both my technical and economics background!</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="portfolio-preview">
+  <h2>Portfolio</h2>
+  <div class="project-slider-wrapper">
+    <button class="slider-arrow left" onclick="slideProjects(-1)">&#9664;</button>
+    
+    <div class="project-slider">
+      {% for project in site.data.projects %}
+      <div class="project-card" onclick="openModal('{{ project.id }}')">
+        <div class="project-card-image-wrapper">
+          <img src="{{ project.image | relative_url }}" alt="{{ project.title }}" onerror="this.onerror=null;this.src='https://placehold.co/300x225/e8f2fc/001745?text=Image+Not+Found';">
+          <div class="overlay"><span>+</span></div>
+        </div>
+        <h3>{{ project.title }}</h3>
+        <p>{{ project.short }}</p>
+      </div>
+      {% endfor %}
+    </div>
+
+    <button class="slider-arrow right" onclick="slideProjects(1)">&#9654;</button>
+  </div>
+</section>
+
+<section class="about-preview">
+  <h2>About Me</h2>
+  <div class="about-buttons">
+    <a href="{{ '/about.html' | relative_url }}" class="btn btn-blue">Academics</a>
+    <a href="{{ '/about.html' | relative_url }}" class="btn btn-blue">Resume</a>
+  </div>
+</section>

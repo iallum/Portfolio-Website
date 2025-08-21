@@ -1,0 +1,18 @@
+education:
+  - school: Columbia University
+    years: 2025 - Expected Winter 2026
+    degree: B.Sc. in Computer Science
+    courses:
+      - Machine Learning
+      - Artifical Intelligence
+      - Intro to Databases
+  - school: University of Chicago
+    years: 2019 - 2023
+    degree: B.A. in Economics with a Specialization in Data Science
+    notes: "  - Cum Laude"
+    courses:
+      - Big Data
+      - Machine Learning and Econometrics
+    extracurriculars:
+      - "Club Fencing Team (Team Captain)"
+      - "Pareto Consulting Club (Case Manager and Recruiting Director)"

@@ -1,0 +1,79 @@
+---
+layout: default
+---
+
+<!-- Masthead-->
+<header class="masthead">
+    <div class="container">
+        <div class="masthead-subheading">{{ site.data.sitetext[site.locale].header.text | default: "Welcome To Our Studio!" }}</div>
+        <div class="masthead-heading text-uppercase">{{ site.data.sitetext[site.locale].header.title | default: "It's Nice To Meet You" }}</div>
+        <a class="btn btn-primary btn-xl text-uppercase" href="{{ site.data.sitetext[site.locale].header.buttonlink | default: "#services" }}">{{ site.data.sitetext[site.locale].header.button | default: "Tell Me More" }}</a>
+    </div>
+</header>
+
+<!-- Spacer Section to prevent squishing -->
+<section class="page-section" style="padding: 4rem 0;">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center">
+                <p class="large text-muted">Welcome to my portfolio! I'm passionate about data science, software development, and solving complex problems through technology.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio-->
+<section class="page-section bg-light" id="portfolio">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">{{ site.data.sitetext[site.locale].portfolio.title | default: "Portfolio" }}</h2>
+            <h3 class="section-subheading text-muted">{{ site.data.sitetext[site.locale].portfolio.text | default: "Lorem ipsum dolor sit amet consectetur." }}</h3>
+        </div>
+        <div class="row">
+            {% for project in site.portfolio %}
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <!-- Portfolio item-->
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-bs-toggle="modal" href="#p{{ forloop.index }}">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="{{ project.caption.thumbnail }}" alt="{{ project.alt }}" />
+                    </a>
+                    <div class="portfolio-caption">
+                        <div class="portfolio-caption-heading">{{ project.caption.title }}</div>
+                        <div class="portfolio-caption-subheading text-muted">{{ project.caption.subtitle }}</div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+<!-- Portfolio Modals-->
+{% for project in site.portfolio %}
+<div class="portfolio-modal modal fade" id="p{{ forloop.index }}" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="modal-body">
+                            <!-- Project details-->
+                            <h2 class="text-uppercase">{{ project.title }}</h2>
+                            <p class="item-intro text-muted">{{ project.subtitle }}</p>
+                            <img class="img-fluid d-block mx-auto" src="{{ project.image }}" alt="{{ project.alt }}" />
+                            <div class="text-start">{{ project.content }}</div>
+                            <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                {{ site.data.sitetext[site.locale].portfolio.closebutton | default: "Close Project" }}
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}

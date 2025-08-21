@@ -1,0 +1,321 @@
+body {
+  font-family: Avenir Next;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  /* This is the container for the line */
+  position: relative;
+  font-size: 1.8em; /* A slightly smaller size for subheadings */
+  font-weight: 550;
+  margin-bottom: 15px;
+  word-spacing: 0.2rem
+}
+h3 {
+  font-size: 1.5em; /* A slightly smaller size for subheadings */
+  font-weight: 400;
+  margin-bottom: 35px;
+  margin-top: 40px;
+}
+
+header.site-header {
+  padding-top: 30px;
+  padding-right: 20px;
+  padding-left: 0;
+}
+header nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  justify-content: flex-end;
+  gap: 2rem;
+}
+header nav ul li a {
+  color: black;
+  text-decoration: none;
+  font-weight: normal;
+}
+header nav ul li a.active {
+  font-weight: bold;
+}
+
+.intro-stripe {
+  width: 100vw;                 /* full viewport width */
+  position: relative;           /* ensures full width */
+  left: 50%;                    /* fixes margin collapse on some browsers */
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background-color: #e6eefa;    /* light blue stripe */
+  padding: 30px;   
+  margin-top: 40px;           /* vertical padding for the stripe */
+}
+.intro-container {
+  max-width: 1200px;  /* matches your .container width elsewhere */
+  margin: 0 auto;     /* centers content */
+  padding: 0 20px;    /* left/right padding inside container */
+}
+.page-heading {
+  font-size: 2.2rem;
+  margin: 0 0 30px 0;   /* space below heading */
+  letter-spacing: 0.1em;
+  word-spacing: 0.8rem;
+}
+.intro-wrapper {
+  display: flex;
+  align-items: center;  /* vertically aligns text with image */
+  gap: 2rem;            /* space between image and text */
+}
+.profile-pic {
+  max-width: 400px;
+  height: auto;         /* maintains original image ratio */
+}
+.intro-text {
+  max-width: 715px;     /* prevents text from stretching to edge */
+  text-align: justify;
+}
+.intro-text p {
+  margin: 0 0 10px 0;   /* small spacing between paragraphs */
+  line-height: 1.5;     /* keeps text compact so it aligns better with image */
+}
+.intro-text p:last-child {
+  margin-bottom: 0;
+}
+
+.container {
+  max-width: 1200px; /* limits the width so content doesn't stretch too far */
+  margin: 0 auto;    /* centers it horizontally */
+  padding: 0 20px;   /* adds space on left and right edges */
+}
+
+.portfolio-preview {
+  margin-top: 75px; /* increase this number for more space */
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  cursor: pointer;
+}
+.project-card img {
+  width: 300px;
+  height: 225px;
+  object-fit: cover;
+  box-sizing: border-box;
+  border: 1px solid #5f7094;
+}
+.project-card h3,
+.project-card p {
+  text-align: center;
+  margin: 5px 0;
+}
+
+.project-card-image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+.project-card-image-wrapper .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 225px;  
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.project-card-image-wrapper:hover .overlay {
+  opacity: 1;
+}
+.overlay span {
+  color: white;
+  font-size: 2rem;
+}
+
+.portfolio-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+}
+
+.project-slider-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0;
+}
+.project-slider {
+  display: flex;
+  gap: 20px;
+  overflow: hidden; /* ensures only visible cards show */
+  width: calc(3 * 300px + 2 * 20px); /* 3 cards * width + 2 gaps */
+  transition: transform 0.3s ease;
+}
+.slider-arrow {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+.slider-arrow.left {
+  left: -50px;
+}
+.slider-arrow.right {
+  right: -50px;
+}
+
+.about-preview {
+  text-align: left;      /* centers the heading and buttons */
+  margin: 75px 0;          /* space above and below section */
+}
+.about-buttons {
+  display: flex;
+  justify-content: center;  /* center the buttons horizontally */
+  gap: 200px;               /* space between the two buttons */
+  margin-top: 60px;        /* space between heading and buttons */
+}
+.btn-blue {
+  background-color: #001745;
+  color: #f0f0f0;
+  padding: 22px 44px;
+  text-decoration: none;
+  border-radius: 1px;
+  font-weight: bold;
+  transition: background 0.3s;
+  font-size: 1.2rem
+}
+.btn-blue:hover {
+  background-color: #263f73  /* slightly darker on hover */
+}
+
+footer {
+  background-color: white;  /* navy color */
+  color: black;               /* footer text/buttons color */
+  text-align: center;
+  padding: 20px 0;            /* vertical space inside the stripe */
+  margin-top: 40px;           /* space above the footer content */
+  width: 100vw;               /* full viewport width */
+  position: relative;         /* ensures full width across page */
+  left: 50%;
+  margin-left: -50vw;
+}
+a[href^="mailto:"] {
+  color: #2d56a6;  /* your desired color */
+  text-decoration: none; /* optional: remove underline */
+}
+.social-icon {
+  width: 55px;          /* size of the icons */
+  height: 55px;
+  object-fit: contain;
+  display: inline-block;
+  margin: 0 10px;       /* space between icons */
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.modal-backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding: 20px;
+  box-sizing: border-box;
+}
+.modal-content {
+  background-color: white;
+  padding: 30px;
+  border-radius: 3px;
+  width: 80%;
+  max-width: 1500px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+.modal-close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  font-size: 2rem;
+  font-weight: bold;
+  color: #555;
+  cursor: pointer;
+  line-height: 1;
+}
+.modal-close:hover {
+  color: #000;
+}
+
+.education-list {
+  border-top: 1px solid #8c9bba;
+  border-bottom: 1px solid #8c9bba;
+  max-width: 95%;
+  margin: 0 auto
+}
+.education-entry {
+  padding-top: 15px; 
+  padding-bottom: 15px;
+  border-bottom: 1px solid #8c9bba;
+}
+.education-list .education-entry:last-child {
+  border-bottom: none;
+}
+.education-header {
+  display: flex;
+  justify-content: space-between; /* Pushes items to opposite ends */
+  align-items: baseline; /* Aligns items to the baseline of the text */
+  margin-bottom: 5px;
+}
+.education-header h4 {
+  margin: 0;
+  color: #001745;
+  font-size: 1.2em; /* Adjust as needed */
+}
+.education-years {
+  font-size: 0.9em; /* Adjust as needed */
+  color: #5f7094;
+}
+.education-degree {
+  font-weight: bold;
+  color: #001745;
+}
+.education-notes {
+  font-size: 0.95em;
+  font-style: italic;
+}
+.education-entry p {
+  margin: 5px 0;
+  font-size: 0.95em;
+  line-height: 1.4;
+}
+.education-entry h4 + p { /* Style the paragraph directly after the h4 (degree) */
+  margin-top: 2px;
+}
+.degree-info {
+  margin-bottom: 10px;
+}
+
+.resume-container {
+  max-width: 95%; 
+  margin: 0 auto;
+}

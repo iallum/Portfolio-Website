@@ -1,0 +1,32 @@
+[
+  {
+    "id": "grocery",
+    "title": "",
+    "short": "",
+    "details_file": "assets/md/grocery.md"
+  },
+  {
+    "id": "perpetual",
+    "title": "",
+    "short": "",
+    "details_file": "assets/md/perpetual.md"
+  },
+  {
+    "id": "spotify",
+    "title": "",
+    "short": "",
+    "details_file": "assets/md/spotify.md"
+  },
+  {
+    "id": "game",
+    "title": "",
+    "short": "",
+    "details_file": "assets/md/game.md"
+  },
+  {
+    "id": "research",
+    "title": "",
+    "short": "",
+    "details_file": "assets/md/research.md"
+  }
+]
