@@ -2,10 +2,18 @@
   box-sizing: border-box;
 }
 
+::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  background: transparent;
+}
+
 body {
   font-family: Avenir Next;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+  scrollbar-width: none;
 }
 
 h2 {
@@ -24,7 +32,7 @@ h3 {
 
 header.site-header {
   padding-top: 30px;
-  padding-right: 20px;
+  padding-right: 30px;
   padding-left: 0;
 }
 header nav ul {
@@ -52,8 +60,8 @@ header nav ul li a.active {
   margin-left: -50vw;
   margin-right: -50vw;
   background-color: #e6eefa;
-  padding: 40px 30px; /* Consistent padding top and bottom */
-  margin-top: 40px; /* This is now added to the whole stripe, not just the top */
+  padding: 40px 30px;
+  margin-top: 40px;
 }
 .intro-container {
   max-width: 1200px;
@@ -62,10 +70,10 @@ header nav ul li a.active {
   margin-bottom: 10px;
 }
 .page-heading {
-  font-size: 2.2rem;
+  font-size: 2rem; /* 2.2 */
   margin: 0 0 30px 0;
-  letter-spacing: 0.1em;
-  word-spacing: 0.8rem;
+  letter-spacing: 0.08em; /* 0.1 */
+  word-spacing: 0.6rem; /* 0.8 */
 }
 .intro-wrapper {
   display: flex;
