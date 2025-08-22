@@ -15,7 +15,7 @@
 
 - id: game
   title: Modified Connect 4
-  short: Programming in C
+  short: Programming a Game in C
   image: /assets/img/game.jpg
 
 - id: research

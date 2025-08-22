@@ -6,15 +6,19 @@ Language: C
 #### Summary
 * Used C to program a version of "Connection 4" with a fun twist!
 * Game is a two-player game played in terminal
-* Game board can be triangular or rectangular with custom height and width
+* Game board can be triangular or rectangular, and players can adjust the size of the board and the run length needed to win
 * Coded a version that stores the piece positions in an array, and version that stores position in bit notation
 
 #### Context
 The final project for one of my classes taught in C was to code up a modified version of Connect 4 that could be played by two people in the terminal.
 
 #### My Work
-For my modified Connect 4 game, the standard win condition still applied. If a player managed to get four of thier pieces in a consecutive line (horizontally, vertically, or diagonally), they would win the game. The twist with my version, however, was that players could play an "earthquake" for thier move rather than placing a piece in a column. When an earthquake occured made, all pieces on the board would move to the furthest left or right (direction specified by the player) position they could. If after an earthquake there were no longer enough pieces to hold a shifted piece up from below, it would fall down.
+For my modified Connect 4 game, standard rules mostly apply. Players take turns placing pieces in a column of their choice on the board. The piece will then fall to the lowest available spot in that column. If a player manages to get a certain number of thier pieces (decided by the players in game setup) in a consecutive line (horizontally, vertically, or diagonally), they win the game. The twist with my version, however, is that players can play an "earthquake" for thier move instead of placing a piece in a column. When an earthquake occurs, all pieces on the board move to the furthest left or right (direction specified by the player) position they can. If after an earthquake, there are no longer enough pieces to hold a shifted piece up from below, it  falls down.
 
-I programmed the game to have a customizable board shape and size. The player can specify if they'd like the board to be triangular or rectangular, and how many rows and columns they'd want. I also coded the game so that the positions of the pieces throughout the grid are tracked in an array. But if specified, the positions of the pieces can be tracked in bit notiation instead.
+I programmed the game to have a customizable board shape and size. The player can specify if they'd like the board to be triangular or rectangular, and how many rows they'd want. The numbers of columns is the calcalated based on the number of rows to maintain consistent board shapes. As I mentioned above, players also specify the number of pieces in a row that must be achived in order to win. Typically, the the positions of the pieces on the board are tracked in an array, but if specified, the positions of the pieces can be tracked in bit notiation instead.
 
-#### Photos of an Example Game
+#### An Example Game
+
+Below is an example of a traingular board game with a specified height of 5 and winning line length of 4 pieces.
+
+[Game](assets/example_game.pdf)

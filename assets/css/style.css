@@ -56,6 +56,7 @@ header nav ul li a.active {
   max-width: 1200px;  /* matches your .container width elsewhere */
   margin: 0 auto;     /* centers content */
   padding: 0 20px;    /* left/right padding inside container */
+  margin-bottom: 10px;
 }
 .page-heading {
   font-size: 2.2rem;
@@ -185,8 +186,9 @@ header nav ul li a.active {
 .about-buttons {
   display: flex;
   justify-content: center;  /* center the buttons horizontally */
-  gap: 200px;               /* space between the two buttons */
+  gap: 120px;               /* space between the two buttons */
   margin-top: 60px;        /* space between heading and buttons */
+  align-items: center;
 }
 .btn-blue {
   background-color: #001745;
@@ -196,7 +198,9 @@ header nav ul li a.active {
   border-radius: 1px;
   font-weight: bold;
   transition: background 0.3s;
-  font-size: 1.2rem
+  font-size: 1.2rem;
+  width: 10%;
+  text-align: center;
 }
 .btn-blue:hover {
   background-color: #263f73  /* slightly darker on hover */
@@ -214,7 +218,7 @@ footer {
   margin-left: -50vw;
 }
 a[href^="mailto:"] {
-  color: #2d56a6;  /* your desired color */
+  color: #5f7094;  /* your desired color */
   text-decoration: none; /* optional: remove underline */
 }
 .social-icons {
@@ -329,4 +333,34 @@ a[href^="mailto:"] {
 .resume-container {
   max-width: 95%; 
   margin: 0 auto;
+}
+
+.content-box {
+  width: 92%;
+  margin: 0 auto 40px auto;
+}
+.fun-facts-heading {
+  margin-top: 40px; /* Add some space above the heading */
+}
+.fun-facts-list {
+  list-style-type: disc; /* Use standard bullet points */
+  margin-right: 40px;
+  margin-bottom: 20px; /* Add space below the list */
+}
+.fun-facts-list li {
+  margin-bottom: 8px; /* Add space between each fun fact */
+  text-align: justify;
+}
+.fun-fact-photos {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.fun-fact-photo {
+  width: calc(16.666% - 10px);
+  height: auto;
+  aspect-ratio: 1 / 1;
+  border-radius: 2px;
+  object-fit: cover;
 }
