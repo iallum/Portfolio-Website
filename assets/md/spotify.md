@@ -17,11 +17,29 @@ Before we began out own analysis, we conducted literature review, looking at oth
 
 For the prediction model, we tried two approaches. As straighforward benchmark approach, we started off with a logitic regression. We split the Hit Predictor Dataset into a training and testing set. Then we fit a logistic regression that included all the variables (except the song title and artist) on the training set. Seeing our results, there were five variables without significant coefficients. We refit the logistic regression without those variables, and the resulting coefficients were all significant. Running the logistic regression with the testing dataset, we had a success rate of 80.93% (95% confidence interval of 79.24% to 82.54%). Interestingly, the false positive rate was about 1.5 times as large as the false negative, meaning the mdoel was more likely to incorrectly predict a flop as a hit than the converse.
 
-We similarlly trained a random forest with the training dataset, selecting for variables until all explanatory variables had a significant coefficient. The resulting model had a 85.13% success rate when tested on the testing dataset. The 95% confidence interval was 83.59% to 86.58%, putting it squarely above the logistic regression. While both the false postive and negative rates were lower with the random forrest, the false positve rate was again higher.
+We similarlly trained a random forest with the training dataset, selecting for variables until all explanatory variables had a significant coefficient. The resulting model had a 85.13% success rate when tested on the testing dataset. The 95% confidence interval was 83.59% to 86.58%, putting it squarely above the logistic regression. While both the false postive and negative rates were lower with the random forest, the false positve rate was again higher.
+
+<div class="flex-center-container">
+ <img src="/assets/img/lr_and_rd_res.png" height="200">
+
+  <p class="summary-text">Summary of results for the two different prediction models</p>
+</div>
+
+<div class="flex-center-container">
+ <img src="/assets/img/rf_vars.png" height="300">
+
+  <p class="summary-text">Visualization of explantory variable importance for the random forest</p>
+</div>
 
 For both the random forest and logistic regression models, the variables with the most explanatory power were instrumentalness, if there was a featured artist, energy, and loudness.
 
 Next, we tackled our goal of a song recommendation system. We tried both k-means clustering and matrix completion to do this. K-means clustering would work by simply just suggesting songs similar to the oen a user was currenlty enjoying. Matrix completion would suggest music based on how the user had previously liked and rated other songs. To determine how many clusters we wanted for our k-means analysis, we looked at the mean silhouette score for a range of clusters counts. Having done so, we determined that 5 was the optimal number of clusters and created such a k-means model. Unfortunately, though, we were unable to succeed in our matrix completion approach due to limitations in our data.
+
+<div class="flex-center-container">
+ <img src="/assets/img/k_means_silhouette.png" height="300">
+
+  <p class="summary-text">Silhoutte analaysis visualizations for when there are 5 clusters</p>
+</div>
 
 #### Report
 <iframe 
