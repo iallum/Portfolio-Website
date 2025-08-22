@@ -29,7 +29,15 @@ In the end, we presented work, and we turned over our findings and code for Perp
 Note: We worked on this project through a shared Github repository. However, I cannot link to it as the account I used was associated with my college email that I no longer have access to.
 
 #### One Pager Summary
-[One Pager](assets/perpetual_one_pager.pdf)
+<iframe 
+  src="/assets/perpetual_one_pager.pdf" 
+  width="100%" 
+  height="500px"
+  style="border: none;">
+</iframe>
 
 #### Final Video Presentation
-[Presentation](assets/perpetual_final_presentation.mov)
+<video controls width="100%" height="auto">
+  <source src="/assets/perpetual_final_presentation.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>

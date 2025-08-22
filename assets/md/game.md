@@ -21,4 +21,9 @@ I programmed the game to have a customizable board shape and size. The player ca
 
 Below is an example of a traingular board game with a specified height of 5 and winning line length of 4 pieces.
 
-[Game](assets/example_game.pdf)
+<iframe 
+  src="/assets/example_game.pdf" 
+  width="100%" 
+  height="500px"
+  style="border: none;">
+</iframe>

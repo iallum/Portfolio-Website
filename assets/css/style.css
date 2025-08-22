@@ -182,16 +182,12 @@ header nav ul li a.active {
   text-align: left;
   margin: 75px 0;
 }
-/*
-  FIXED: Button width to be the same size and not too long.
-*/
 .about-buttons {
   display: flex;
   justify-content: center;
   gap: 120px;
-  margin: 60px auto 0 auto; /* Added to center the button container */
+  margin-top: 60px;
   align-items: center;
-  max-width: 600px; /* Constrains the width of the button container */
 }
 .btn-blue {
   background-color: #001745;
@@ -202,8 +198,8 @@ header nav ul li a.active {
   font-weight: bold;
   transition: background 0.3s;
   font-size: 1.2rem;
-  flex-grow: 1; /* Makes the buttons grow to the same width */
   text-align: center;
+  min-width: 200px; /* You can adjust this value as needed */
 }
 .btn-blue:hover {
   background-color: #263f73;
@@ -224,9 +220,6 @@ a[href^="mailto:"] {
   color: #5f7094;
   text-decoration: none;
 }
-/*
-  FIXED: Social icons to be circular and the same size.
-*/
 .social-icons {
   display: flex;
   justify-content: center;
@@ -268,8 +261,8 @@ a[href^="mailto:"] {
   background-color: white;
   padding: 30px;
   border-radius: 3px;
-  width: 80%;
-  max-width: 1500px;
+  width: 95%;
+  max-width: 1600px;
   max-height: 90vh;
   overflow-y: auto;
   position: relative;
@@ -279,7 +272,7 @@ a[href^="mailto:"] {
   position: absolute;
   top: 10px;
   right: 15px;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: bold;
   color: #555;
   cursor: pointer;

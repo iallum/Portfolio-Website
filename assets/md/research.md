@@ -37,6 +37,11 @@ As one might might expect, we found that the more flexible a model was (the easi
 In the end, our findings were shared with a committee in congress, and an article was written comparing the output of the models I had created. In it, I was thanked for my research contributions.
 
 #### Published Article
-[Link](https://www.aeaweb.org/articles?id=10.1257/pandp.20221075) to the published article on the American Economics Association website (must be a member to acces)
+The final article published by the American Economics Association can be found [here](https://www.aeaweb.org/articles?id=10.1257/pandp.20221075). However, you must be a member to access the article, so I've also inlcuded a working paper version of the article below.
 
-[Free Working Paper Version](assets/UI_article.pdf)
+<iframe 
+  src="/assets/UI_article.pdf" 
+  width="100%" 
+  height="500px"
+  style="border: none;">
+</iframe>

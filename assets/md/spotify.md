@@ -24,7 +24,12 @@ For both the random forest and logistic regression models, the variables with th
 Next, we tackled our goal of a song recommendation system. We tried both k-means clustering and matrix completion to do this. K-means clustering would work by simply just suggesting songs similar to the oen a user was currenlty enjoying. Matrix completion would suggest music based on how the user had previously liked and rated other songs. To determine how many clusters we wanted for our k-means analysis, we looked at the mean silhouette score for a range of clusters counts. Having done so, we determined that 5 was the optimal number of clusters and created such a k-means model. Unfortunately, though, we were unable to succeed in our matrix completion approach due to limitations in our data.
 
 #### Report
-[Report](assets/spotify_final_report_edited.pdf)
+<iframe 
+  src="/assets/spotify_final_report_edited.pdf" 
+  width="100%" 
+  height="500px"
+  style="border: none;">
+</iframe>
 
-#### Github Link
-[Github](https://github.com/iallum/ml-metrics-final-project/tree/main)
+#### Github
+The Github repository for this project can be found [here](https://github.com/iallum/ml-metrics-final-project/tree/main)
