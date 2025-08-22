@@ -32,4 +32,4 @@ Next, we tackled our goal of a song recommendation system. We tried both k-means
 </iframe>
 
 #### Github
-The Github repository for this project can be found [here](https://github.com/iallum/ml-metrics-final-project/tree/main)
+The Github repository for this project can be found [here](https://github.com/iallum/ml-metrics-final-project/tree/main).
