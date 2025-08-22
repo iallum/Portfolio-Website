@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   font-family: Avenir Next;
   margin: 0;
@@ -5,15 +9,14 @@ body {
 }
 
 h2 {
-  /* This is the container for the line */
   position: relative;
-  font-size: 1.8em; /* A slightly smaller size for subheadings */
+  font-size: 1.8em;
   font-weight: 550;
   margin-bottom: 15px;
-  word-spacing: 0.2rem
+  word-spacing: 0.2rem;
 }
 h3 {
-  font-size: 1.5em; /* A slightly smaller size for subheadings */
+  font-size: 1.5em;
   font-weight: 400;
   margin-bottom: 35px;
   margin-top: 40px;
@@ -42,59 +45,58 @@ header nav ul li a.active {
 }
 
 .intro-stripe {
-  width: 100vw;                 /* full viewport width */
-  position: relative;           /* ensures full width */
-  left: 50%;                    /* fixes margin collapse on some browsers */
+  width: 100vw;
+  position: relative;
+  left: 50%;
   right: 50%;
   margin-left: -50vw;
   margin-right: -50vw;
-  background-color: #e6eefa;    /* light blue stripe */
-  padding: 30px;   
-  margin-top: 40px;           /* vertical padding for the stripe */
+  background-color: #e6eefa;
+  padding: 40px 30px; /* Consistent padding top and bottom */
+  margin-top: 40px; /* This is now added to the whole stripe, not just the top */
 }
 .intro-container {
-  max-width: 1200px;  /* matches your .container width elsewhere */
-  margin: 0 auto;     /* centers content */
-  padding: 0 20px;    /* left/right padding inside container */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
   margin-bottom: 10px;
 }
 .page-heading {
   font-size: 2.2rem;
-  margin: 0 0 30px 0;   /* space below heading */
+  margin: 0 0 30px 0;
   letter-spacing: 0.1em;
   word-spacing: 0.8rem;
 }
 .intro-wrapper {
   display: flex;
-  align-items: center;  /* vertically aligns text with image */
-  gap: 2rem;            /* space between image and text */
+  align-items: center;
+  gap: 2rem;
 }
 .profile-pic {
   max-width: 400px;
-  height: auto;         /* maintains original image ratio */
+  height: auto;
 }
 .intro-text {
-  max-width: 715px;     /* prevents text from stretching to edge */
+  max-width: 715px;
   text-align: justify;
 }
 .intro-text p {
-  margin: 0 0 10px 0;   /* small spacing between paragraphs */
-  line-height: 1.5;     /* keeps text compact so it aligns better with image */
+  margin: 0 0 10px 0;
+  line-height: 1.5;
 }
 .intro-text p:last-child {
   margin-bottom: 0;
 }
 
 .container {
-  max-width: 1200px; /* limits the width so content doesn't stretch too far */
-  margin: 0 auto;    /* centers it horizontally */
-  padding: 0 20px;   /* adds space on left and right edges */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .portfolio-preview {
-  margin-top: 75px; /* increase this number for more space */
+  margin-top: 75px;
 }
-
 .project-card {
   display: flex;
   flex-direction: column;
@@ -106,7 +108,6 @@ header nav ul li a.active {
   width: 300px;
   height: 225px;
   object-fit: cover;
-  box-sizing: border-box;
   border: 1px solid #5f7094;
 }
 .project-card h3,
@@ -114,7 +115,6 @@ header nav ul li a.active {
   text-align: center;
   margin: 5px 0;
 }
-
 .project-card-image-wrapper {
   position: relative;
   display: inline-block;
@@ -124,7 +124,7 @@ header nav ul li a.active {
   top: 0;
   left: 0;
   width: 300px;
-  height: 225px;  
+  height: 225px;
   background: rgba(0,0,0,0.4);
   display: flex;
   align-items: center;
@@ -147,7 +147,6 @@ header nav ul li a.active {
   gap: 20px;
   padding: 40px 20px;
 }
-
 .project-slider-wrapper {
   position: relative;
   display: flex;
@@ -158,8 +157,8 @@ header nav ul li a.active {
 .project-slider {
   display: flex;
   gap: 20px;
-  overflow: hidden; /* ensures only visible cards show */
-  width: calc(3 * 300px + 2 * 20px); /* 3 cards * width + 2 gaps */
+  overflow: hidden;
+  width: calc(3 * 300px + 2 * 20px);
   transition: transform 0.3s ease;
 }
 .slider-arrow {
@@ -180,15 +179,19 @@ header nav ul li a.active {
 }
 
 .about-preview {
-  text-align: left;      /* centers the heading and buttons */
-  margin: 75px 0;          /* space above and below section */
+  text-align: left;
+  margin: 75px 0;
 }
+/*
+  FIXED: Button width to be the same size and not too long.
+*/
 .about-buttons {
   display: flex;
-  justify-content: center;  /* center the buttons horizontally */
-  gap: 120px;               /* space between the two buttons */
-  margin-top: 60px;        /* space between heading and buttons */
+  justify-content: center;
+  gap: 120px;
+  margin: 60px auto 0 auto; /* Added to center the button container */
   align-items: center;
+  max-width: 600px; /* Constrains the width of the button container */
 }
 .btn-blue {
   background-color: #001745;
@@ -199,47 +202,53 @@ header nav ul li a.active {
   font-weight: bold;
   transition: background 0.3s;
   font-size: 1.2rem;
-  width: 10%;
+  flex-grow: 1; /* Makes the buttons grow to the same width */
   text-align: center;
 }
 .btn-blue:hover {
-  background-color: #263f73  /* slightly darker on hover */
+  background-color: #263f73;
 }
 
 footer {
-  background-color: white;  /* navy color */
-  color: black;               /* footer text/buttons color */
+  background-color: white;
+  color: black;
   text-align: center;
-  padding: 20px 0;            /* vertical space inside the stripe */
-  margin-top: 40px;           /* space above the footer content */
-  width: 100vw;               /* full viewport width */
-  position: relative;         /* ensures full width across page */
+  padding: 20px 0;
+  margin-top: 40px;
+  width: 100vw;
+  position: relative;
   left: 50%;
   margin-left: -50vw;
 }
 a[href^="mailto:"] {
-  color: #5f7094;  /* your desired color */
-  text-decoration: none; /* optional: remove underline */
+  color: #5f7094;
+  text-decoration: none;
 }
+/*
+  FIXED: Social icons to be circular and the same size.
+*/
 .social-icons {
-  /* Use flexbox to manage layout and spacing */
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 20px; /* A clean way to add space between elements */
+  gap: 20px;
 }
 .social-icons a {
-  /* Give the anchor a fixed size to match the image */
   width: 55px;
   height: 55px;
   border-radius: 50%;
+  display: inline-block;
+  line-height: 0;
+  transition: transform 0.2s ease-in-out;
+}
+.social-icons a:hover {
+  transform: scale(1.1);
 }
 .social-icon {
-  /* Make the image fill the anchor's container */
   width: 100%;
   height: 100%;
-  display: block; /* Removes extra space around the image */
   object-fit: contain;
+  display: block;
 }
 
 .modal-backdrop {
@@ -254,7 +263,6 @@ a[href^="mailto:"] {
   align-items: center;
   z-index: 1000;
   padding: 20px;
-  box-sizing: border-box;
 }
 .modal-content {
   background-color: white;
@@ -285,10 +293,10 @@ a[href^="mailto:"] {
   border-top: 1px solid #8c9bba;
   border-bottom: 1px solid #8c9bba;
   max-width: 95%;
-  margin: 0 auto
+  margin: 0 auto;
 }
 .education-entry {
-  padding-top: 15px; 
+  padding-top: 15px;
   padding-bottom: 15px;
   border-bottom: 1px solid #8c9bba;
 }
@@ -297,17 +305,17 @@ a[href^="mailto:"] {
 }
 .education-header {
   display: flex;
-  justify-content: space-between; /* Pushes items to opposite ends */
-  align-items: baseline; /* Aligns items to the baseline of the text */
+  justify-content: space-between;
+  align-items: baseline;
   margin-bottom: 5px;
 }
 .education-header h4 {
   margin: 0;
   color: #001745;
-  font-size: 1.2em; /* Adjust as needed */
+  font-size: 1.2em;
 }
 .education-years {
-  font-size: 0.9em; /* Adjust as needed */
+  font-size: 0.9em;
   color: #5f7094;
 }
 .education-degree {
@@ -323,7 +331,7 @@ a[href^="mailto:"] {
   font-size: 0.95em;
   line-height: 1.4;
 }
-.education-entry h4 + p { /* Style the paragraph directly after the h4 (degree) */
+.education-entry h4 + p {
   margin-top: 2px;
 }
 .degree-info {
@@ -331,7 +339,7 @@ a[href^="mailto:"] {
 }
 
 .resume-container {
-  max-width: 95%; 
+  max-width: 95%;
   margin: 0 auto;
 }
 
@@ -340,15 +348,16 @@ a[href^="mailto:"] {
   margin: 0 auto 40px auto;
 }
 .fun-facts-heading {
-  margin-top: 40px; /* Add some space above the heading */
+  margin-top: 40px;
 }
 .fun-facts-list {
-  list-style-type: disc; /* Use standard bullet points */
+  list-style-type: disc;
+  padding-left: 0; /* Ensures bullets align with container */
   margin-right: 40px;
-  margin-bottom: 20px; /* Add space below the list */
+  margin-bottom: 20px;
 }
 .fun-facts-list li {
-  margin-bottom: 8px; /* Add space between each fun fact */
+  margin-bottom: 8px;
   text-align: justify;
 }
 .fun-fact-photos {
