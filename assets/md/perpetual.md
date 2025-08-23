@@ -22,8 +22,8 @@ After cleaning the data and filtering for businesses we thought would use foodwa
 
 <div class="flex-center-container">
   <div>
-    <img src="/assets/img/api_data.png" height="300" style="margin-right: 30px">
-    <img src="/assets/img/distribution_point.png" height="300">
+    <img src="/assets/img/proj_details/api_data.png" height="300" style="margin-right: 30px">
+    <img src="/assets/img/proj_details/distribution_point.png" height="300">
   </div>
 
   <p class="summary-text">Mapped foodware-using establishments (identified using API data) and mapped distribution points</p>
@@ -34,9 +34,12 @@ Next, we addressed the task of deciding collection points. We figured that the m
 Once again, we used weighted k-means clustering to determine central collection points. This time, the weights were a "convenience score" we calculated using factors like the parcel type, estimated population, and foot traffic data. However, because these collection point locations we calculated were just latitudes and longitudes, we weren't sure exactly what they pointed at. They could point to the middle of a highway or someone's backyard, and we wanted to ensure that the collection points were accessible. In order to address this concern, we decided to that the final collection point locations ought to be the closest businesses to each of the prelimary collection point locations we calculated.
 
 <div class="flex-center-container">
-  <img src="/assets/img/collection_point.png" height="300">
+  <div>
+    <img src="/assets/img/proj_details/parcel_data.png" height="300" style="margin-right: 30px">
+    <img src="/assets/img/proj_details/collection_point.png" height="300">
+  </div>
 
-  <p class="summary-text">Example of a prelimiary and final collection point</p>
+  <p class="summary-text">Galveston parcel data, and an example of a prelimiary and final collection point</p>
 </div>
 
 In the end, we presented work, and we turned over our findings and code for Perpetual's use. We left the code flexible so they could adjust factors like the number of distribution/collection points or how the weights for clustering were calculated. A one pager of our work and a recording our our video presentation are linked below.
