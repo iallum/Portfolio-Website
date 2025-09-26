@@ -5,14 +5,16 @@ education:
     courses:
       - Machine Learning
       - Artifical Intelligence
-      - Intro to Databases
+      - Introduction to Databases
   - school: University of Chicago
     years: 2019 - 2023
     degree: B.A. in Economics with a Specialization in Data Science
     notes: "  - Cum Laude"
     courses:
-      - Big Data
       - Machine Learning and Econometrics
+      - Big Data
+      - Data Science Clinic
+      - Data Construction & Interpretation
     extracurriculars:
       - "Club Fencing Team (Team Captain)"
       - "Pareto Consulting Club (Case Manager and Recruiting Director)"
