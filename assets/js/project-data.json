@@ -28,5 +28,11 @@
     "title": "",
     "short": "",
     "details_file": "assets/md/research.md"
+  },
+  {
+    "id": "database",
+    "title": "",
+    "short": "",
+    "details_file": "assets/md/database.md"
   }
 ]

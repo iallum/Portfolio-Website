@@ -22,3 +22,8 @@
   title: Economic Research
   short: Data Modeling
   image: /assets/img/proj_covers/research.jpg
+
+- id: database
+  title: Dinner Party App
+  short: Web App Using SQL
+  image: /assets/img/proj_covers/database.jpg
