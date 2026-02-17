@@ -210,7 +210,7 @@ header nav ul li a.active {
   transition: background 0.3s;
   font-size: 1.2rem;
   text-align: center;
-  min-width: 200px; /* You can adjust this value as needed */
+  min-width: 200px;
 }
 .btn-blue:hover {
   background-color: #263f73;
@@ -367,7 +367,7 @@ a[href^="mailto:"] {
 }
 .fun-facts-list {
   list-style-type: disc;
-  padding-left: 0; /* Ensures bullets align with container */
+  padding-left: 0;
   margin-right: 40px;
   margin-bottom: 20px;
 }
@@ -388,17 +388,15 @@ a[href^="mailto:"] {
   border-radius: 2px;
   object-fit: cover;
 }
-
-/* ---- Mobile Responsive Layouts (for screens < 768px) ---- */
 @media (max-width: 768px) {
   body {
-    font-size: 0.95rem; /* Reduces the base font size for the whole page */
+    font-size: 0.95rem;
   }
 
   img, video {
     max-width: 100%;
     height: auto;
-    display: block; /* Prevents images from having extra space below them */
+    display: block;
   }
 
   .container, .intro-container {
@@ -506,6 +504,6 @@ a[href^="mailto:"] {
   }
 
   .resume-container iframe, .pdf-container iframe {
-    height: 800px; /* NEW: Adjusts height for specific content */
+    height: 800px;
   }
 }

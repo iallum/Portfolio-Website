@@ -1,7 +1,7 @@
 title: "Isabel (Izzy) Allum"
 description: "CS Master's Student Portfolio"
-baseurl: "" # root
-url: "https://itallum.com" # change if you use a subdomain
+baseurl: ""
+url: "https://itallum.com"
 
 collections:
   pages:

@@ -24,8 +24,7 @@ For this step, we first determined what the entities would be. Then we figured w
 
 Below is the E/R diagrma we created for our project proposal:
 <div class="flex-center-container">
- <img src="/assets/img/proj_details/databases.png" height="300">
- 
+ <img src="/assets/img/proj_details/databases/schema.png" height="400">
 </div>
 
 3. Translate that schema into a normalized database schema
@@ -43,78 +42,79 @@ For this stage, we implemented a web server using Flask and SQLAlchemy to create
 Below are photos of our final site:
 
 <div class="flex-center-container">
-  <img src="/assets/img/proj_details/databases/login_1.png" height="320">
-
+  <img src="/assets/img/proj_details/databases/login_1.png" height="240">
   <p class="summary-text">Login page</p>
+  <p class="summary-text"> </p>
 </div>
 
 <div class="flex-center-container">
-  <img src="/assets/img/proj_details/databases/home_page_2.png" height="320">
-
+  <img src="/assets/img/proj_details/databases/home_page_2.png" height="400">
   <p class="summary-text">Example user's home page</p>
+  <p class="summary-text"> </p>
 </div>
 
 <div class="flex-center-container">
-  <img src="/assets/img/proj_details/databases/event_page_3.png" height="320">
-
+  <img src="/assets/img/proj_details/databases/event_page_3.png" height="400">
   <p class="summary-text">Example event page (invitee perspective)</p>
+  <p class="summary-text"> </p>
 </div>
 
 <div class="flex-center-container">
-  <img src="/assets/img/proj_details/databases/add_recipe_4.png" height="320">
-
+  <img src="/assets/img/proj_details/databases/add_recipe_4.png" height="240">
   <p class="summary-text">Dropdown menu for adding a recipe to an event</p>
+  <p class="summary-text"> </p>
 </div>
 
 <div class="flex-center-container">
-  <img src="/assets/img/proj_details/databases/recipe_added_5.png" height="320">
-
+  <img src="/assets/img/proj_details/databases/recipe_added_5.png" height="200">
   <p class="summary-text">Dropdown menu for adding a recipe to an event</p>
+  <p class="summary-text"> </p>
 </div>
 
 <div class="flex-center-container">
-  <img src="/assets/img/proj_details/databases/write_comment_6.png" height="320">
-
+  <img src="/assets/img/proj_details/databases/write_comment_6.png" height="240">
   <p class="summary-text">Writing a comment for an event page</p>
+  <p class="summary-text"> </p>
+</div>
 
 </div>\\<div class="flex-center-container">
-  <img src="/assets/img/proj_details/databases/edit_comment_7.png" height="320">
-
+  <img src="/assets/img/proj_details/databases/edit_comment_7.png" height="240">
   <p class="summary-text">Editing a comment</p>
+  <p class="summary-text"> </p>
 </div>
 
 </div>\\<div class="flex-center-container">
-  <img src="/assets/img/proj_details/databases/create_event_8.png" height="320">
-
+  <img src="/assets/img/proj_details/databases/create_event_8.png" height="240">
   <p class="summary-text">Interface for creating a new event</p>
+  <p class="summary-text"> </p>
 </div>
 
 </div>\\<div class="flex-center-container">
-  <img src="/assets/img/proj_details/databases/event_page_9.png" height="320">
-
+  <img src="/assets/img/proj_details/databases/event_page_9.png" height="240">
   <p class="summary-text">Example home page's event section after creating an event</p>
+  <p class="summary-text"> </p>
 </div>
 
 </div>\\<div class="flex-center-container">
-  <img src="/assets/img/proj_details/databases/hosting_page_10.png" height="320">
-
+  <img src="/assets/img/proj_details/databases/hosting_page_10.png" height="240">
   <p class="summary-text">Example event page (invitee perspective)</p>
+  <p class="summary-text"> </p>
 </div>
 
 </div>\\<div class="flex-center-container">
-  <img src="/assets/img/proj_details/databases/recipes_11.png" height="320">
-
+  <img src="/assets/img/proj_details/databases/recipes_11.png" height="350">
   <p class="summary-text">Public recipe bank on site</p>
+  <p class="summary-text"> </p>
 </div>
 
 </div>\\<div class="flex-center-container">
-  <img src="/assets/img/proj_details/databases/recipe_page_12.png" height="320">
-
+  <img src="/assets/img/proj_details/databases/recipe_page_12.png" height="280">
   <p class="summary-text">Example recipe page</p>
+  <p class="summary-text"> </p>
 </div>
 
 </div>\\<div class="flex-center-container">
-  <img src="/assets/img/proj_details/databases/recipe_search_13.png" height="320">
-
+  <img src="/assets/img/proj_details/databases/recipe_search_13.png" height="210">
   <p class="summary-text">Recipe search</p>
+  <p class="summary-text"> </p>
 </div>

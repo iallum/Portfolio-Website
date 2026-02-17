@@ -2,14 +2,17 @@ education:
   - school: Columbia University
     years: 2025 - Expected Winter 2026
     degree: B.Sc. in Computer Science
+    notes: "  - GPA: 4.00"
     courses:
       - Machine Learning
       - Artifical Intelligence
       - Introduction to Databases
+      - Reinforcement Learning
+      - Natural Language Processing
   - school: University of Chicago
     years: 2019 - 2023
     degree: B.A. in Economics with a Specialization in Data Science
-    notes: "  - Cum Laude"
+    notes: "  - Cum Laude, GPA: 3.89"
     courses:
       - Machine Learning and Econometrics
       - Big Data
