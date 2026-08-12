@@ -1,3 +1,13 @@
+- id: brain
+  title: AI Humor & Topic Scoring
+  short: Topic Scoring for AI Humor
+  image: /assets/img/proj_covers/brain.jpg
+
+- id: captioning
+  title: Image Captioning
+  short: Conditioned Recurrent Neural Networks
+  image: /assets/img/proj_covers/captioning.jpg
+
 - id: grocery
   title: Grocery Merger
   short: Cloud-Based Big Data Analysis
@@ -13,6 +23,11 @@
   short: Hit Prediction & Song Rec Algorithm
   image: /assets/img/proj_covers/spotify.jpg
 
+- id: database
+  title: Dinner Party App
+  short: Web App Using SQL
+  image: /assets/img/proj_covers/database.jpg
+
 - id: game
   title: Modified Connect 4
   short: Programming a Game in C
@@ -22,8 +37,3 @@
   title: Economic Research
   short: Data Modeling
   image: /assets/img/proj_covers/research.jpg
-
-- id: database
-  title: Dinner Party App
-  short: Web App Using SQL
-  image: /assets/img/proj_covers/database.jpg

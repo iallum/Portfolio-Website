@@ -27,9 +27,49 @@ title: About
   {% endfor %}
 </div>
 
+<div class="transcript-toggle-container">
+  <div class="transcript-buttons">
+    <button id="btn-columbia" class="transcript-btn active" onclick="showTranscript('columbia')">
+      Columbia Transcript
+    </button>
+    <button id="btn-uchicago" class="transcript-btn" onclick="showTranscript('uchicago')">
+      UChicago Transcript
+    </button>
+  </div>
+
+  <div id="transcript-columbia" class="transcript-box" style="display: block;">
+    <iframe src="{{ 'assets/Columbia_Transcript.pdf' | relative_url }}" width="100%" height="650px"></iframe>
+  </div>
+
+  <div id="transcript-uchicago" class="transcript-box" style="display: none;">
+    <iframe src="{{ 'assets/UChicago_Transcript.pdf' | relative_url }}" width="100%" height="650px"></iframe>
+  </div>
+</div>
+
+<script>
+function showTranscript(school) {
+  var columbiaBox = document.getElementById('transcript-columbia');
+  var uchicagoBox = document.getElementById('transcript-uchicago');
+  var columbiaBtn = document.getElementById('btn-columbia');
+  var uchicagoBtn = document.getElementById('btn-uchicago');
+
+  if (school === 'columbia') {
+    columbiaBox.style.display = 'block';
+    uchicagoBox.style.display = 'none';
+    columbiaBtn.classList.add('active');
+    uchicagoBtn.classList.remove('active');
+  } else if (school === 'uchicago') {
+    columbiaBox.style.display = 'none';
+    uchicagoBox.style.display = 'block';
+    uchicagoBtn.classList.add('active');
+    columbiaBtn.classList.remove('active');
+  }
+}
+</script>
+
 <h3 id="resume">Resume</h3>
 <div class="resume-container">
-  <iframe src="{{ 'assets/resume.pdf' | relative_url }}" width="100%" height="650px"></iframe>
+  <iframe src="{{ 'assets/Resume.pdf' | relative_url }}" width="100%" height="650px"></iframe>
 </div>
 
 <h3 id="fun-facts" class="fun-facts-heading">Fun Facts</h3>
@@ -43,11 +83,11 @@ title: About
       <li>As much as I love listening to music, I don’t play myself. However, I did get to learn an unusual instrument in middle school. For a year, I had the unique experience of learning to ring the giant bells in the National Cathedral. Hearing bells always reminds me of that fun time!</li>
     </ul>
   <div class="fun-fact-photos">
-    <img src="/assets/img/fun/concert.png" class="fun-fact-photo">
-    <img src="/assets/img/fun/fencing.png" class="fun-fact-photo">
-    <img src="/assets/img/fun/food.png" class="fun-fact-photo">
-    <img src="/assets/img/fun/dc.png" class="fun-fact-photo">
-    <img src="/assets/img/fun/crochet.png" class="fun-fact-photo">
-    <img src="/assets/img/fun/cathedral.png" class="fun-fact-photo">
+    <img src="{{ '/assets/img/fun/concert.png' | relative_url }}" class="fun-fact-photo" alt="Concert">
+    <img src="{{ '/assets/img/fun/fencing.png' | relative_url }}" class="fun-fact-photo" alt="Fencing">
+    <img src="{{ '/assets/img/fun/food.png' | relative_url }}" class="fun-fact-photo" alt="Food">
+    <img src="{{ '/assets/img/fun/dc.png' | relative_url }}" class="fun-fact-photo" alt="DC">
+    <img src="{{ '/assets/img/fun/crochet.png' | relative_url }}" class="fun-fact-photo" alt="Crochet">
+    <img src="{{ '/assets/img/fun/cathedral.png' | relative_url }}" class="fun-fact-photo" alt="Cathedral">
   </div>
 </div>

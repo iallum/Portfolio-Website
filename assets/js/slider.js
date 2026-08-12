@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   const slider = document.querySelector(".project-slider");
+  if (!slider) return;
   const cards = Array.from(slider.querySelectorAll(".project-card"));
   
   let visibleCount;

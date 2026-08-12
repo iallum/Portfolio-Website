@@ -17,8 +17,8 @@ For my modified Connect 4 game, standard rules mostly apply. Players take turns 
 
 <div class="flex-center-container">
   <div>
-    <img src="/assets/img/proj_details/eq_right1.png" height="150" style="margin-right: 60px">
-    <img src="/assets/img/proj_details/eq_right2.png" height="150">
+    <img src="/assets/img/proj_details/game/eq_right1.png" height="150" style="margin-right: 60px">
+    <img src="/assets/img/proj_details/game/eq_right2.png" height="150">
   </div>
 
   <p class="summary-text">Example of an earthquake right on a rectangular board</p>
@@ -26,8 +26,8 @@ For my modified Connect 4 game, standard rules mostly apply. Players take turns 
 
 <div class="flex-center-container">
   <div>
-    <img src="/assets/img/proj_details/eq_left1.png" height="150" style="margin-right: 60px">
-    <img src="/assets/img/proj_details/eq_left2.png" height="150">
+    <img src="/assets/img/proj_details/game/eq_left1.png" height="150" style="margin-right: 60px">
+    <img src="/assets/img/proj_details/game/eq_left2.png" height="150">
   </div>
 
   <p class="summary-text">Example of an earthquake left on a triangular board</p>

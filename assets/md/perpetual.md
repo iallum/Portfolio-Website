@@ -22,8 +22,8 @@ After cleaning the data and filtering for businesses we thought would use foodwa
 
 <div class="flex-center-container">
   <div>
-    <img src="/assets/img/proj_details/api_data.png" height="300" style="margin-right: 30px">
-    <img src="/assets/img/proj_details/distribution_point.png" height="300">
+    <img src="/assets/img/proj_details/perpetual/api_data.png" height="300" style="margin-right: 30px">
+    <img src="/assets/img/proj_details/perpetual/distribution_point.png" height="300">
   </div>
 
   <p class="summary-text">Mapped foodware-using establishments (identified using API data) and mapped distribution points</p>
@@ -35,8 +35,8 @@ Once again, we used weighted k-means clustering to determine central collection 
 
 <div class="flex-center-container">
   <div>
-    <img src="/assets/img/proj_details/parcel_data.png" height="300" style="margin-right: 30px">
-    <img src="/assets/img/proj_details/collection_point.png" height="300">
+    <img src="/assets/img/proj_details/perpetual/parcel_data.png" height="300" style="margin-right: 30px">
+    <img src="/assets/img/proj_details/perpetual/collection_point.png" height="300">
   </div>
 
   <p class="summary-text">Galveston parcel data and an example of a preliminary and final collection point</p>

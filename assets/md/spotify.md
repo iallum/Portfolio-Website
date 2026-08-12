@@ -20,13 +20,13 @@ For the prediction model, we tried two approaches. As a straighforward benchmark
 We similarly trained a random forest with the training dataset, filtering for explanatory variables with a substantial effect on the accuracy of the model. The resulting model had an 85.13% success rate when tested on the testing dataset. The 95% confidence interval was 83.59% to 86.58%, putting its success rate squarely above the logistic regression. While both the false positive and negative rates were lower with the random forest, the false positive rate was again higher.
 
 <div class="flex-center-container">
- <img src="/assets/img/proj_details/lr_and_rd_res.png" height="200">
+ <img src="/assets/img/proj_details/spotify/lr_and_rd_res.png" height="200">
 
   <p class="summary-text">Summary of results for the two different prediction models</p>
 </div>
 
 <div class="flex-center-container">
- <img src="/assets/img/proj_details/rf_vars.png" height="300">
+ <img src="/assets/img/proj_details/spotify/rf_vars.png" height="300">
 
   <p class="summary-text">Visualization of explantory variable importance for the random forest</p>
 </div>
@@ -36,7 +36,7 @@ For both the random forest and logistic regression models, the variables with th
 Next, we tackled our goal of a song recommendation system. We tried both k-means clustering and matrix completion to do this. K-means clustering would work by simply suggesting songs similar to the one a user was currently enjoying. After clustering songs, we'd recommend new songs in the same cluster as the current song. Matrix completion would suggest music based on how the user had previously liked and rated other songs. To determine how many clusters we wanted for our k-means analysis, we looked at the mean silhouette score for a range of cluster counts. Having done so, we determined that 5 was the optimal number of clusters and created such a k-means model. Unfortunately, though, we were unable to succeed in our matrix completion approach due to limitations in our data.
 
 <div class="flex-center-container">
- <img src="/assets/img/proj_details/k_means_silhouette.png" height="300">
+ <img src="/assets/img/proj_details/spotify/k_means_silhouette.png" height="300">
 
   <p class="summary-text">Silhoutte analaysis visualizations for when there are 5 clusters</p>
 </div>

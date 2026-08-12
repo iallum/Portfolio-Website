@@ -16,7 +16,7 @@ The summer before my junior year at UChicago, I was a research assistant for a U
 When I joined the research lab, they had produced the data they wanted to use for the analysis (simulated employment data at the individual level from 1994 through 2019, covering both the 2001 and 2007-2009 recessions). However, they had not begun analysis with the data, and that is what I was directed to work on. I was tasked with programming models of varied benefits systems using the employment data as input and providing information on benefit coverage over time as output.
 
 <div class="flex-center-container">
- <img src="/assets/img/proj_details/uncovered_job_losers.png" height="300">
+ <img src="/assets/img/proj_details/research/uncovered_job_losers.png" height="300">
 
   <p class="summary-text">A plot showing the share of the labor force comprised of unemployed, uncovered people over time for one model we explored</p>
 </div>
@@ -32,15 +32,15 @@ As for the number of extra weeks available during an extended benefits period, w
 
 <div class="flex-center-container">
   <div>
-    <img src="/assets/img/proj_details/comparing_models.png" height="320">
-    <img src="/assets/img/proj_details/comparing_weeks.png" height="320">
+    <img src="/assets/img/proj_details/research/comparing_models.png" height="320">
+    <img src="/assets/img/proj_details/research/comparing_weeks.png" height="320">
   </div>
 
   <p class="summary-text">The first plot compares coverage between benefit systems with different trigger on and off conditions. The second compares coverage for different lengths of additional benefits during an extended benefits period.</p>
 </div>
 
 <div class="flex-center-container">
- <img src="/assets/img/proj_details/weeks_and_models_table.png" height="140">
+ <img src="/assets/img/proj_details/research/weeks_and_models_table.png" height="140">
 
   <p class="summary-text">This table summarizes coverage for models varying both in trigger on and off conditions and in additional benefits lengths. Larger numbers indicate more comprehensive coverage.</p>
 </div>
@@ -48,7 +48,7 @@ As for the number of extra weeks available during an extended benefits period, w
 Last, regarding how extended benefit periods would trigger off, many of our considerations were similar to our considerations for triggering on. One additional twist we tried, though, was whether we'd provide a "soft landing" for people who had exceeded the standard 26 weeks of benefits and were on to the extra weeks when a period triggered off. Without a soft landing, such people would immediately lose coverage. However, if we allowed a soft landing, such people would be able to either finish off the extra weeks they had started or receive a set number of weeks to prevent an immediate loss of coverage.
 
 <div class="flex-center-container">
- <img src="/assets/img/proj_details/soft_landing_flow_chart.png" height="380">
+ <img src="/assets/img/proj_details/research/soft_landing_flow_chart.png" height="380">
 
   <p class="summary-text">A flowchart illustrating how many weeks an unemployed person would receive depending on their current circumstances. This flowchart is for a system where an extended benefits period would provide 34-73 additional weeks of support and a soft landing. It does not provide details on what would trigger on or off an extended benefits period.</p>
 </div>
@@ -60,15 +60,15 @@ The main focus of my work, though, was programming a function in R that allowed 
 Once we got to this point, we began to compare the performance of the different models. For example, we compared how many times the on triggers with state-level criteria caught recessionary events before the ones with national-level ones criteria. We compared UI coverage rates, and we compared false positive and false negative rates for various models. (False positives are when an extended benefit period triggers on when not needed, and false negatives are when an extended benefit period is not triggered on when needed.)
 
 <div class="flex-center-container">
-  <img src="/assets/img/proj_details/state_caught_false_negatives.png" height="300">
+  <img src="/assets/img/proj_details/research/state_caught_false_negatives.png" height="300">
 
   <p class="summary-text">This plot looks at the extended benefit periods that would have begun earlier under a state-triggering model than under a national-triggering model. The plot shows the lag in months between the two models triggering, and it also shows how many of those triggered periods would have been false negatives. </p>
 </div>
 
 <div class="flex-center-container">
   <div>
-    <img src="/assets/img/proj_details/false_positives.png" height="320">
-    <img src="/assets/img/proj_details/false_negatives.png" height="320">
+    <img src="/assets/img/proj_details/research/false_positives.png" height="320">
+    <img src="/assets/img/proj_details/research/false_negatives.png" height="320">
   </div>
 
   <p class="summary-text">The plot on the left looks at the number of extended benefit periods triggered that were false positives for a certain model. The plot on the right plots the false negatives for a different model.</p>
